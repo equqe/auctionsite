@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аукционная система S&D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-image: url('https://i.pinimg.com/originals/97/b6/32/97b632ba0f828dfc1ec68ec48fc816a5.jpg'); /* Используйте правильный путь к изображению */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            width: 50%; /* Задаем ширину 50% от экрана */
+            height: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контраста текста */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .btn-custom {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .shadow-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        /* Добавляем адаптацию для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Для мобильных устройств делаем ширину 90% */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="container text-center">
+            <h1 class="mb-4">Аукционная система S&D</h1>
+            <div class="shadow-box">
+                <p>
+                    "S&D" — революционная аукционная система, предоставляющая полный спектр услуг для проведения мгновенных и эффективных выставок аукционов.
+                    Наш интерфейс обеспечивает легкость навигации и мгновенный доступ к информации, что делает процесс участия в аукционе максимально прозрачным и приятным.
+                </p>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="/qr_inter" class="btn btn-primary btn-custom">Войти</a>
+                <a href="/create_auction" class="btn btn-success btn-custom">Создать</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

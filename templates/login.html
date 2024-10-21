@@ -1,0 +1,14 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Вход{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Вход</h1>
+    <div class="shadow-box">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-custom">Войти</button>
+        </form>
+    </div>
+{% endblock %}

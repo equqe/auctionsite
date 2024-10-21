@@ -1,0 +1,76 @@
+<!-- create_auction.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать аукцион</title>
+    <style>
+        /* Пример стилей (как ранее) */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/97/b6/32/97b632ba0f828dfc1ec68ec48fc816a5.jpg'); /* Используйте правильный путь к изображению */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .auction-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .auction-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .auction-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .auction-form input,
+        .auction-form select,
+        .auction-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .auction-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .auction-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="auction-container">
+        <form class="auction-form" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Создать аукцион</button>
+        </form>
+    </div>
+</body>
+</html>
