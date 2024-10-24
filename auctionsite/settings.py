@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-u1*rd4&cz@)+ae$+%6(11(kucim%**gd!1e^-zc!$3fhn=q!sv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.fly.dev', '0.0.0.0', '88.198.49.134']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '88.198.49.134', 'alicestar.ru']
 
+# Включите безопасные настройки для HTTPS
+""" SECURE_SSL_REDIRECT = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True """
+SECURE_SSL_REDIRECT = False
 
 # Application definition
 
