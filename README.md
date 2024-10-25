@@ -34,3 +34,4 @@ python manage.py runserver
 установка на winserver
 
 https://github.com/Johnnyboycurtis/webproject/
+(взять оттуда web.config)
