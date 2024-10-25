@@ -1,4 +1,4 @@
-руководство по деплою сервиса
+руководство по деплою сервиса локально
 
 создание виртуального окружения:
 
@@ -28,5 +28,9 @@ pip install -r requirements.txt
 запуск
 
 ```
-python manage.py runserver_plus --cert-file cert.pem --key-file key.pem
+python manage.py runserver
 ```
+
+установка на winserver
+
+https://github.com/Johnnyboycurtis/webproject/
